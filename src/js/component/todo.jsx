@@ -24,7 +24,7 @@ function ListItems() {
 		fetch(`https://playground.4geeks.com/apis/fake/todos/user/susanatorrest`)
 			.then(response => {
 				if (response.ok) {
-					return response.json;
+					return response.json();
 				}
 				else {
 					if (response.status === 404) {
